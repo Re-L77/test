@@ -1,4 +1,4 @@
-Algoritmo Ordenar_Num
+Proceso Ordenar_Num
     Definir num1, num2, num3, sumaPares, productoImpares, pares, impares, aux Como Real;
     pares <- 0;
     impares <- 0;
@@ -30,10 +30,8 @@ Algoritmo Ordenar_Num
         num3 <- aux;
     FinSi
 	
-    // Mostrar los números ordenados
     Escribir "Números ordenados de menor a mayor: ", num1, ", ", num2, ", ", num3;
 	
-    // Verificar si num1 es par o impar
     Si num1 % 2 = 0 Entonces
         sumaPares <- sumaPares + num1;
         pares <- pares + 1;
@@ -42,7 +40,6 @@ Algoritmo Ordenar_Num
         impares <- impares + 1;
     FinSi;
 	
-    // Verificar si num2 es par o impar
     Si num2 % 2 = 0 Entonces
         sumaPares <- sumaPares + num2;
         pares <- pares + 1;
@@ -51,7 +48,6 @@ Algoritmo Ordenar_Num
         impares <- impares + 1;
     FinSi;
 	
-    // Verificar si num3 es par o impar
     Si num3 % 2 = 0 Entonces
         sumaPares <- sumaPares + num3;
         pares <- pares + 1;
@@ -60,9 +56,8 @@ Algoritmo Ordenar_Num
         impares <- impares + 1;
     FinSi;
 	
-    // Mostrar resultados
     Escribir "Suma de los números pares: ", sumaPares;
     Escribir "Producto de los números impares: ", productoImpares;
     Escribir "Cantidad de números pares: ", pares;
     Escribir "Cantidad de números impares: ", impares;
-FinAlgoritmo
+FinProceso
