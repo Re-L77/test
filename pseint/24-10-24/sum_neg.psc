@@ -3,7 +3,7 @@ Proceso sum_neg
         Definir i Como Entero;
         i<-0;
         r<-0;
-        Mientras i < 3 Hacer
+        Mientras i < 10 Hacer
                 Escribir "Número: ";
                 Leer n;
                 Si n < 0 Entonces
