@@ -63,7 +63,7 @@ Proceso Bloque3
 					Imprimir "Resultado: ", sum;
 				5:
 					Escribir "---- Opcion 5 ----";
-					Escribir "Dado que la sumatoria es divergente, entonces.";
+					Escribir "Dado que la sumatoria es divergente, entonces:";
 					Escribir "La sumatoria estimada de n=1 hasta n=", x, " es: ";
 					Para n<-1 Hasta x Con Paso 1 Hacer
 						sum<- sum + 1/n;
