@@ -54,6 +54,7 @@ Proceso Bloque3
 								sum<- sum + (n/(2*n+1))^n;
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 						3:
 							Escribir "---- Opcion 3 ----";
 							Escribir "Sumatoria de n=1 hasta n=", x, ": ";
@@ -63,6 +64,7 @@ Proceso Bloque3
 								cs<-0;
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 						4:
 							Escribir "---- Opcion 4 ----";
 							Escribir "Sumatoria de n=1 hasta n=", x, ": ";
@@ -70,6 +72,7 @@ Proceso Bloque3
 								sum<- sum + (2*n+Raiz(n))/(n^3+Raiz(n));
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 						5:
 							Escribir "---- Opcion 5 ----";
 							Escribir "Dado que la sumatoria es divergente, entonces:";
@@ -78,6 +81,7 @@ Proceso Bloque3
 								sum<- sum + 1/n;
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 						6:
 							Escribir "---- Opcion 6 ----";
 							Escribir "Sumatoria de n=1 hasta n=", x, ": ";
@@ -85,6 +89,7 @@ Proceso Bloque3
 								sum<- sum  + 1 / ((n + 1) * Raiz(n) * n * Raiz(n + 1));
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 						7:
 							Escribir "---- Opcion 7 ----";
 							Escribir "Sumatoria de n=1 hasta n=", x, ": ";
@@ -92,6 +97,7 @@ Proceso Bloque3
 								sum<- sum + Raiz(n)/(n^2+1);
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 						8:
 							Escribir "---- Opcion 8 ----";
 							Escribir "Sumatoria de n=1 hasta n=", x, ": ";
@@ -99,6 +105,7 @@ Proceso Bloque3
 								sum<- sum + 1 / ((3*n+1)*(3*n+4));
 							Fin Para
 							Imprimir "Resultado: ", sum;
+        Esperar Tecla;
 					Fin Segun
 				FinSi
 			Fin Si
