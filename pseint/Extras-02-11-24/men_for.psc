@@ -1,5 +1,5 @@
 Proceso men_for
-	Definir opc, i, num, cont, act, act2, sig Como Entero;
+	Definir opc, i, num, cont, act, act2 Como Entero;
 	Repetir
 		Limpiar Pantalla;
 		Escribir "Secuencias";
@@ -12,9 +12,7 @@ Proceso men_for
 		Escribir "";
 		Escribir Sin Saltar "Elige una opción";
 		Leer opc;
-		
 		Si opc <= 0 O opc > 7 Entonces
-			Limpiar Pantalla;
 			Escribir "ERROR - Elige una opción correcta.";
 			Escribir "[Presiona una tecla para continuar...]";
 			Esperar Tecla;
@@ -33,9 +31,6 @@ Proceso men_for
 								Imprimir Sin Saltar i, " ";
 								cont<-cont + 1;
 							Fin Para
-							Escribir "";
-							Escribir "[Presiona una tecla para continuar...]";
-							Esperar Tecla;
 						2:
 							act<-1;
 							cont<-2;
@@ -44,9 +39,6 @@ Proceso men_for
 								act <- act + cont;
 								cont<-cont + 1;
 							Fin Para
-							Escribir "";
-							Escribir "[Presiona una tecla para continuar...]";
-							Esperar Tecla;
 						3:
 							act<-1;
 							cont<-3;
@@ -55,9 +47,6 @@ Proceso men_for
 								act <- act + cont;
 								cont<-cont + 2;
 							Fin Para
-							Escribir "";
-							Escribir "[Presiona una tecla para continuar...]";
-							Esperar Tecla;
 						4:
 							act<-0;
 							act2<-1;
@@ -75,9 +64,6 @@ Proceso men_for
 									FinSi
 								FinSi
 							Fin Para
-							Escribir "";
-							Escribir "[Presiona una tecla para continuar...]";
-							Esperar Tecla;
 						5:
 							act<-2;
 							cont<-2;
@@ -87,16 +73,14 @@ Proceso men_for
 								act<-act+cont;
 								cont<-cont+2;
 							Fin Para
-							Escribir "";
-							Escribir "[Presiona una tecla para continuar...]";
-							Esperar Tecla;
 					FinSegun
 				SiNo
-					Limpiar Pantalla;
 					Escribir "ERROR - Límite no permitido.";
-					Escribir "[Presiona una tecla para continuar...]";
-					Esperar Tecla;
 				FinSi
+				Escribir "";
+				Escribir "[Presiona una tecla para continuar...]";
+				Esperar Tecla;
+				Limpiar Pantalla;
 			FinSi
 		FinSi
 	Hasta Que opc = 6;
